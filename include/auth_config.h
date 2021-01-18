@@ -1,0 +1,82 @@
+/**
+ * Copyright (c) 2021 Golden Bits Software, Inc.
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ * @file auth_config.h
+ *
+ * @brief  Configuration defines for the authentication library.
+ *
+ */
+
+#ifndef AUTH_CONFIG_H
+#define AUTH_COAUTH_CONFIG_H
+
+/**
+ * Copyright (c) 2021 Golden Bits Software, Inc.
+ *
+ * Use of this software is per the terms of the Apache 2.0 license
+ * (here: https://www.apache.org/licenses/LICENSE-2.0) plus the following;
+ *
+ *
+ *  THIS IS OPEN SOURCE SOFTWARE, THERE ARE NO WARRANTIES OF ANY KIND FOR ANY ASPECT OF THIS SOFTWARE.
+ *  BY USING THIS SOFTWARE, YOU ACCEPT ALL LIABILITIES AND RESPONSIBILITIES FOR ANY ISSUES OR
+ *  PROBLEMS ARISING OUT OF USE. YOU ARE RESPONSIBLE FOR DETERMINING THE SUITABILITY OF THIS
+ *  SOFTWARE FOR YOUR USE.
+ *
+ *  IF YOU ARE UNSURE ABOUT USING THIS SOFTWARE, DON'T USE IT.
+ *
+ *  THIS SOFTWARE IS SUPPLIED BY GOLDEN BITS SOFTWARE, INC. "AS IS". NO WARRANTIES, WHETHER
+ *  EXPRESS, IMPLIED OR STATUTORY, APPLY TO THIS SOFTWARE, INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED
+ *  WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY, AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ *  IN NO EVENT WILL GOLDEN BITS SOFTWARE BE LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE, EXEMPLARY,
+ *  INCIDENTAL OR CONSEQUENTIAL LOSS, DAMAGE, (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+ *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) COST OR EXPENSE OF ANY
+ *  KIND WHATSOEVER RELATED TO THE SOFTWARE, HOWEVER CAUSED, EVEN IF GOLDEN BITS SOFTWARE HAS BEEN ADVISED
+ *  OF THE POSSIBILITY OR THE DAMAGES ARE FORESEEABLE. GOLDEN BITS SOFTWARE SHALL NOT BE HELD LIABLE UNDER
+ *  ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Enable use of Challenge-Response authentication
+ */
+#if !defined(AUTH_CHALLENGE_RESPONSE)
+#define AUTH_CHALLENGE_RESPONSE
+#endif
+
+
+/**
+ * Enable use of DTLS authentication method
+ */
+//#if !defined(AUTH_DTLS)
+//#define AUTH_DTLS
+//#endif
+
+
+/**
+ * Define the default log level. Log levels are:
+ *
+ * 0 NONE     No logging.
+ * 1 ERROR    Only error log messages.
+ * 2 WARNING  Log Warning messages
+ * 3 DEBUG,   Log debug messages
+ */
+#if !defined(AUTH_LOG_LEVEL)
+#define AUTH_LOG_LEVEL          1
+#endif
+
+/**
+ * Enable Loopback transport for testing.
+ */
+#if !defined(AUTH_UDP_XPORT)
+#define AUTH_UDP_XPORT
+#endif
+
+/**
+ * Number of auth instance
+ */
+#if !defined(NUM_AUTH_INSTANCES)
+#define NUM_AUTH_INSTANCES   2
+#endif
+
+
+#endif
+
